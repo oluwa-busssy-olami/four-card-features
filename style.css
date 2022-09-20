@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--VeryLightGray);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.headings h1 {
+    color: var(--VeryDarkBlue);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+span {
+    color: var(--VeryDarkBlue);
+    font-weight: 200;
+}
+
+.headings p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-weight: 200;
+}
+
+.container {
+    margin-top: 60px;
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3, min-content;
+    grid-gap: 30px;
+}
+
+.team-builder {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background-color: #fff;
+    padding: 30px;
+    border-top: 4px solid var(--Red);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.supervisor {
+    grid-column: 1/2;
+    grid-row: 2/5;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    border-top: 4px solid var(--Cyan);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.karma {
+    grid-column: 2/3;
+    grid-row: 4/6;
+    padding: 30px;
+    background-color: #fff;
+    border-top: 3px solid var(--Orange);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.calculator {
+    grid-column: 3/4;
+    grid-row: 2/5;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    border-top: 3px solid var(--Blue);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: .8rem;
+    font-weight: 200;
+    line-height: 1.4;
+    color: var(--VeryDarkBlue);
+    margin-bottom: 30px;
+}
+
+.container img {
+    float: right;
+}
+
+footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: var(--Cyan);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer a {
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width:748px) {
+    body {
+        min-height: 100vh;
+    }
+    .headings {
+        margin: 0 auto;
+    }
+    .headings h1 {
+        font-size: 1.4rem;
+    }
+    .headings p {
+        font-size: .9rem;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
